@@ -6,42 +6,85 @@
             Scavenger Pictures
         </title>
         <meta name="scavenger pictures and gifs" content="Scav Pics">
+        <style>
+            .Box {
+                border: 5px outset rgb(255, 255, 255);
+                background-color: rgb(0, 0, 0);    
+                text-align: center;
+                
+            }
+            h1 {
+                color: rgb(255, 255, 255);
+            }
+            .Silly1{
+                display: inline-block;
+            }
+             .Silly2{
+                display: inline;
+            }
+            .sticky {
+                position: -webkit-sticky;
+                position: sticky;
+                top: 0;
+            }
+        </style>
     </head>
         
     <body>
-        <header>
-            <h1 align="center" style="font-family: 'Courier New', Courier, monospace">
+        <header class="sticky">
+            <div class="Box">
+                <img class="Silly1" title="Elite Scav Walk" src="grafika/EliteScavengerWalk.gif" alt="Elite Scav Walk" style="float: left;padding: auto;">
+                <img class="Silly2" title="Scav Look" src="grafika/scavlookie.webp" alt="Scav Look" style="float: right;padding: auto;">
+                <!--<div style="clear: left;"/> <div style="clear: right;"/> */-->
+                <h1 align="center" style="font-family: 'Courier New', Courier, monospace">
                 SCAV PICS AND SILLY STUFF
-            </h1>
+                </h1>
+        </div>
         </header>
 
+
+        
         <h2 align="center" style="font-family: 'Courier New', Courier, monospace">
             Facts about scavengers
         </h2>
-        <img  align="center" title="picture of a scavengers" src="grafika/scav.png" alt="picture of a scavengers">
+        <br>
+        <img   title="picture of a scavengers" src="grafika/scav.png" alt="picture of a scavengers" style="float: right;">
+
+<!--list of fun facts with pictures -->     
         <ol>
             <li align="justify" style="font-family: 'Courier New', Courier, monospace">
-                Fact: Scavs can throw spears
+               <b>Fact: Scavs can throw spears</b> 
                 <ul>
-                    Scavs have evolved to the point of being able to throw spears, pint with them and also use spears tot draw in the ground.
+                    Scavs have evolved to the point of being able to <i>throw spears</i>, <i>point</i> with them and also use spears to <i>draw in the ground</i>.
                 </ul>
-                <img  title="picture of a scavenger holding a spear" src="grafika/silly.png" alt="picture of a scavenger holding a spear">
+                <img  title="picture of a scavenger holding a spear" src="grafika/silly.png" alt="picture of a scavenger holding a spear" width="216" height="216">
+                <img  title="picture of a scavenger pointing with a spear" src="https://static.wikitide.net/rainworldwiki/4/46/Scav_Pointing_Spear.gif" alt="picture of a scavenger pointing with a spear">
             </li>
+            <br>
             <li align="justify" style="font-family: 'Courier New', Courier, monospace">
-                Fact: Scavs know the concept of trade
+                <b>Fact: Scavs know the concept of trade</b>
                 <ul>
-                    There are multiple sos called "Scavenger Outposts" where ine way to pass is trade. Different items hold varying worth - pearls being the most sought after.
+                    There are multiple sos called <i>"Scavenger Outposts"</i> where one way to pass is trade. Different items hold varying worth - <i>pearls</i> being the most sought after.
                 </ul>
-                <img title="scav seen trading in overseer hologram" src="https://static.wikitide.net/rainworldwiki/c/c9/Overseer_Yellow_Octagon_7c.png" alt="scav in overseer hologram">
+                <img title="scav seen trading in overseer hologram" src="https://static.wikitide.net/rainworldwiki/c/c9/Overseer_Yellow_Octagon_7c.png" alt="scav in overseer hologram" width="96" height="173">
+                <img title="scavs trading a pearl for a spear and passage" src="https://static.wikitide.net/rainworldwiki/9/9f/Scavtollcommunication.gif" alt="scavs trading a pearl for a spear and passage">
             </li>
+            <br>
             <li align="justify" style="font-family: 'Courier New', Courier, monospace">
-                Fact: Scavs have a class system
+                <b>Fact: Scavs have a class system</b>
                 <ul>
-                    
+                    There are 3 main social classes in Scavenger Society: <i>Scouts, Elites and The Chieftain.</i> <i>Scouts</i> are the most common, othen seen in packs of 5 and stationed at Outposts or Merchant rooms. 
+                    <i>Elite Scavenger</i>s are specially trained military class, distinguished by thier colorful masks.<i>The Chieftain</i>  is a de facto leader of the settlement, with a biggest mask adorned with pearls.
                 </ul>
-               
+                <img title="picture of an Elite Scavenger" src="grafika/Elite_Scavenger_infobox_image.png" alt="picture of an Elite Scavenger" width="240" height="240">
+                <img title="Elite Scav attacking a Spider" src="grafika/Elite_scav_jump_spear.gif" alt="Elite Scav attacking a Spider">
+                <img title="Chieftain Scavenger on a throne" src="grafika/Chieftain_Scavenger_infobox_image.png" alt="Chieftain Scavenger on a throne" width="240" height="240">
+
             </li>
 
         </ol>
     </body>
+
+<!-- https://gsap.com/community/forums/topic/33815-auto-infinite-scroll-image-gallery/-->
+
 </html>
