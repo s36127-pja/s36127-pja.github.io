@@ -8,6 +8,7 @@
         <title>
             Scavenger Pictures
         </title>
+        <link rel="icon" type="image/x-icon" href="grafika/Scavenger_icon.ico">
         <link rel="preload" href="winbox.bundle.min.js" as="script">
 
         <!-- Stylesheet -->
@@ -32,29 +33,58 @@
                 display: inline;
                 
             }
+            .trade{
+                padding: 2%;
+                size: auto;
+                float: left;
+            }
         </style>
     </head>
 
-    <body>
+    <body class="fade-in">
         
         <header class="sticky">
             <div class="navibox">
-                <img  title="Elite Scav Walk" src="grafika/EliteScavengerWalk.gif" alt="Elite Scav Walk" style="float: left;padding: auto;">
-                <img  title="Scav Look" src="grafika/scavlookie.webp" alt="Scav Look" style="float: right;padding: auto;">
                     <!--<div style="clear: left;"/> <div style="clear: right;"/> */-->
-                <h1 style="padding 5%;font-family: 'Courier New', Courier, monospace; font-size: auto;color: rgb(255, 255, 255);">
+                <h1 style="padding 5%;font-family: 'Courier New', Courier, monospace; font-size: auto;color: rgb(255, 255, 255);background-color:black">
                     SCAV PICS AND SILLY STUFF<br>
-                   <!--move the items around bruh--> 
+                   <!--move the items around bruh
+                <img  loading="lazy" title="Elite Scav Walk" src="grafika/EliteScavengerWalk.gif" alt="Elite Scav Walk" style="float: left;padding: auto;">
+                <img  loading="lazy" title="Scav Look" src="grafika/scavlookie.webp" alt="Scav Look" style="float: right;padding: auto;">
+                   --> 
                 </h1>
             </div>  
         </header>
+        
+        <div class="collum2">
+            <h1>
+                SCAVENGER TRADING
+            </h1>
+
+            <p>
+                Scavengers use various items to trade with eachother or even other intelligent creatures<br>
+                Here are some of them:<br>
+            </p>
+
+            <div id="contentwrapper">
+                <div id="inner-wrapper">
+                    <div class="trade"> <img loading="lazy" title="rock" src="https://static.wikitide.net/rainworldwiki/f/ff/Rock_icon.png" alt="rock"></div>
+                    <div class="trade"> <img loading="lazy" title="spear" src="https://static.wikitide.net/rainworldwiki/5/5f/Spear_icon.png" alt="spear"></div>
+                    <div class="trade"> <img loading="lazy" title="explosive spear" src="https://static.wikitide.net/rainworldwiki/4/4d/Explosive_Spear_icon.png" alt="explosive spear"></div>
+                    <div class="trade"> <img loading="lazy" title="spear" src="https://static.wikitide.net/rainworldwiki/5/5f/Spear_icon.png" alt="spear"></div>
+                </div>
+            </div>
+        </div>
+
+    
         <div id="container">
             <div id="draggable-elem">
               
                     <br>
-                    <h2 align="center" style="font-family: 'Courier New', Courier, monospace; font-size: auto">
-                        Facts about scavengers
-                    </h2>
+                       <h2 align="center" style="font-family: 'Courier New', Courier, monospace; font-size: auto">
+                        Facts about scavengers <br> (move me around!!)
+                    </h2> 
+                    
                     <br>
 
                     <ol>
@@ -63,8 +93,8 @@
                         <ul>
                             Scavs have evolved to the point of being able to <i>throw spears</i>, <i>point</i> with them and also use spears to <i>draw in the ground</i>.
                         </ul>
-                        <img  title="picture of a scavenger holding a spear" src="grafika/silly.png" alt="picture of a scavenger holding a spear" width="216" height="216">
-                        <img  title="picture of a scavenger pointing with a spear" src="https://static.wikitide.net/rainworldwiki/4/46/Scav_Pointing_Spear.gif" alt="picture of a scavenger pointing with a spear">
+                        <img  loading="lazy" title="picture of a scavenger holding a spear" src="grafika/silly.png" alt="picture of a scavenger holding a spear" width="216" height="216">
+                        <img  loading="lazy" title="picture of a scavenger pointing with a spear" src="https://static.wikitide.net/rainworldwiki/4/46/Scav_Pointing_Spear.gif" alt="picture of a scavenger pointing with a spear">
                     </li>
                     <br>
                     <li align="justify" style="font-family: 'Courier New', Courier, monospace; font-size: auto">
@@ -72,8 +102,8 @@
                         <ul>
                             There are multiple sos called <i>"Scavenger Outposts"</i> where one way to pass is trade. Different items hold varying worth - <i>pearls</i> being the most sought after.
                         </ul>
-                        <img title="scav seen trading in overseer hologram" src="https://static.wikitide.net/rainworldwiki/c/c9/Overseer_Yellow_Octagon_7c.png" alt="scav in overseer hologram" width="96" height="173">
-                        <img title="scavs trading a pearl for a spear and passage" src="https://static.wikitide.net/rainworldwiki/9/9f/Scavtollcommunication.gif" alt="scavs trading a pearl for a spear and passage">
+                        <img loading="lazy" title="scav seen trading in overseer hologram" src="https://static.wikitide.net/rainworldwiki/c/c9/Overseer_Yellow_Octagon_7c.png" alt="scav in overseer hologram" width="96" height="173">
+                        <img loading="lazy" title="scavs trading a pearl for a spear and passage" src="https://static.wikitide.net/rainworldwiki/9/9f/Scavtollcommunication.gif" alt="scavs trading a pearl for a spear and passage">
                     </li>
                     <br>
                     <li align="justify" style="font-family: 'Courier New', Courier, monospace; font-size: auto">
@@ -83,14 +113,23 @@
                             <i>Elite Scavenger</i>s are specially trained military class, distinguished by thier colorful masks.<i>The Chieftain</i>  is a de facto leader of the settlement, with a biggest mask adorned with pearls.
                         </ul>
                         <!--<img title="picture of an Elite Scavenger" src="grafika/Elite_Scavenger_infobox_image.png" alt="picture of an Elite Scavenger" width="240" height="240">-->
-                        <img title="Elite Scav attacking a Spider" src="grafika/Elite_scav_jump_spear.gif" alt="Elite Scav attacking a Spider">
-                        <img title="Chieftain Scavenger on a throne" src="grafika/Chieftain_Scavenger_infobox_image.png" alt="Chieftain Scavenger on a throne" width="240" height="240">
+                        <img loading="lazy" title="Elite Scav attacking a Spider" src="grafika/Elite_scav_jump_spear.gif" alt="Elite Scav attacking a Spider">
+                        <img loading="lazy" title="Chieftain Scavenger on a throne" src="grafika/Chieftain_Scavenger_infobox_image.png" alt="Chieftain Scavenger on a throne" width="240" height="240">
 
                     </li>
                     </ol>
                 
             </div>
         </div>
+
+<!--https://stackoverflow.com/questions/32153720/how-to-make-button-show-content-onclick
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/overscroll-behavior
+
+https://www.w3schools.com/howto/tryhow_css_parallax_demo.htm
+-->
+
+
         <script src="scriptdrag.js"></script>  
     
     </body>
