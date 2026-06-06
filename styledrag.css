@@ -1,7 +1,12 @@
+html{
+  cursor: url('grafika/Nootfly.gif'),auto;
+}
+
 body {
   padding: 2%;
   margin: 0;
   background-color: black;
+  
   
 }
 .container {
