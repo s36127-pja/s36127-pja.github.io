@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="scavenger pictures and gifs" content="Scav Pics">
+        <title>
+            Scavenger Pictures
+        </title>
+        <link rel="icon" type="image/x-icon" href="grafika/Scavenger_icon.ico">
+        <link rel="preload" href="winbox.bundle.min.js" as="script">
+
+        <!-- Stylesheet -->
+        <link rel="stylesheet" href="styledrag.css" />
+        <style>
+            .navibox{
+                border: 5px outset rgb(255, 255, 255);
+                background-color: rgb(0, 0, 0);    
+                text-align: center;
+                max-height:max-content;
+                
+            }
+            .sticky{
+                position: sticky;
+                top: 0;
+                z-index: 1;
+            }
+            .silly1{
+                display: inline-block;
+            }
+             .silly2{
+                display: inline;
+                
+            }
+            .trade{
+                padding: 2%;
+                size: auto;
+                float: left;
+            }
+        </style>
+    </head>
+
+    <body class="fade-in">
+        
+        <header class="sticky">
+            <div class="navibox">
+                    <!--<div style="clear: left;"/> <div style="clear: right;"/> */-->
+                <h1 style="font-family: 'Courier New', Courier, monospace; font-size: auto;color: rgb(255, 255, 255);background-color:black">
+                    SCAV PICS AND SILLY STUFF<br>
+                   <!--move the items around bruh
+                <img  loading="lazy" title="Elite Scav Walk" src="grafika/EliteScavengerWalk.gif" alt="Elite Scav Walk" style="float: left;padding: auto;">
+                <img  loading="lazy" title="Scav Look" src="grafika/scavlookie.webp" alt="Scav Look" style="float: right;padding: auto;">
+                   --> 
+                </h1>
+            </div>  
+        </header>
+        
+        <div class="container">
+           <div class="collum2">
+            <h1>
+                SCAVENGER TRADING
+            </h1>
+
+            <p>
+                Scavengers use various items to trade with eachother or even other intelligent creatures<br>
+                Here are some of them:<br>
+            </p>
+
+            <div id="contentwrapper">
+                <div id="inner-wrapper">
+                    <div class="trade"> <img loading="lazy" title="rock" src="https://static.wikitide.net/rainworldwiki/f/ff/Rock_icon.png" alt="rock"></div>
+                    <div class="trade"> <img loading="lazy" title="spear" src="https://static.wikitide.net/rainworldwiki/5/5f/Spear_icon.png" alt="spear"></div>
+                    <div class="trade"> <img loading="lazy" title="explosive spear" src="https://static.wikitide.net/rainworldwiki/4/4d/Explosive_Spear_icon.png" alt="explosive spear"></div>
+                    <div class="trade"> <img loading="lazy" title="spear" src="https://static.wikitide.net/rainworldwiki/5/5f/Spear_icon.png" alt="spear"></div>
+                </div>
+            </div><br>
+            
+            <div class="tab">
+                <button class="tablinks" onclick="openCity(event, 'London')">London</button>
+                <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+                <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+            </div>
+            
+            </div> 
+        </div>
+        
+
+    
+        <div class="container">
+            <div id="draggable-elem">
+              
+                    <br>
+                       <h2 align="center" style="font-family: 'Courier New', Courier, monospace; font-size: auto">
+                        Facts about scavengers <br> (move me around!!)
+                    </h2> 
+                    
+                    <br>
+
+                    <ol>
+                    <li align="justify" style="font-family: 'Courier New', Courier, monospace; font-size: auto">
+                    <b>Fact: Scavs can throw spears</b> 
+                        <ul>
+                            Scavs have evolved to the point of being able to <i>throw spears</i>, <i>point</i> with them and also use spears to <i>draw in the ground</i>.
+                        </ul>
+                        <img  loading="lazy" title="picture of a scavenger holding a spear" src="grafika/silly.png" alt="picture of a scavenger holding a spear" width="216" height="216">
+                        <img  loading="lazy" title="picture of a scavenger pointing with a spear" src="https://static.wikitide.net/rainworldwiki/4/46/Scav_Pointing_Spear.gif" alt="picture of a scavenger pointing with a spear">
+                    </li>
+                    <br>
+                    <li align="justify" style="font-family: 'Courier New', Courier, monospace; font-size: auto">
+                        <b>Fact: Scavs know the concept of trade</b>
+                        <ul>
+                            There are multiple sos called <i>"Scavenger Outposts"</i> where one way to pass is trade. Different items hold varying worth - <i>pearls</i> being the most sought after.
+                        </ul>
+                        <img loading="lazy" title="scav seen trading in overseer hologram" src="https://static.wikitide.net/rainworldwiki/c/c9/Overseer_Yellow_Octagon_7c.png" alt="scav in overseer hologram" width="96" height="173">
+                        <img loading="lazy" title="scavs trading a pearl for a spear and passage" src="https://static.wikitide.net/rainworldwiki/9/9f/Scavtollcommunication.gif" alt="scavs trading a pearl for a spear and passage">
+                    </li>
+                    <br>
+                    <li align="justify" style="font-family: 'Courier New', Courier, monospace; font-size: auto">
+                        <b>Fact: Scavs have a class system</b>
+                        <ul>
+                            There are 3 main social classes in Scavenger Society: <i>Scouts, Elites and The Chieftain.</i> <i>Scouts</i> are the most common, othen seen in packs of 5 and stationed at Outposts or Merchant rooms. 
+                            <i>Elite Scavenger</i>s are specially trained military class, distinguished by thier colorful masks.<i>The Chieftain</i>  is a de facto leader of the settlement, with a biggest mask adorned with pearls.
+                        </ul>
+                        <!--<img title="picture of an Elite Scavenger" src="grafika/Elite_Scavenger_infobox_image.png" alt="picture of an Elite Scavenger" width="240" height="240">-->
+                        <img loading="lazy" title="Elite Scav attacking a Spider" src="grafika/Elite_scav_jump_spear.gif" alt="Elite Scav attacking a Spider">
+                        <img loading="lazy" title="Chieftain Scavenger on a throne" src="grafika/Chieftain_Scavenger_infobox_image.png" alt="Chieftain Scavenger on a throne" width="240" height="240">
+
+                    </li>
+                    </ol>
+                
+            </div>
+        </div>
+
+<!--https://stackoverflow.com/questions/32153720/how-to-make-button-show-content-onclick
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/overscroll-behavior
+
+https://www.w3schools.com/howto/tryhow_css_parallax_demo.htm
+-->
+
+
+        <script src="scriptdrag.js"></script>  
+    
+    </body>
+
+</html>
+
+
+
+
+
+<div class="headline">
+    <h2>
+        All current notes as of:
+    </h2>
+    <p id="date"></p>
+    <script>
+        n =  new Date();
+        y = n.getFullYear();
+        m = n.getMonth() + 1;
+        d = n.getDate();
+        document.getElementById("date").innerHTML = m + "/" + d + "/" + y;
+    </script> 
+</div>
+                
+                <div class="box">
+                   <ol>
+                    <li align="justify" style="font-family: 'Courier New', Courier, monospace; font-size: auto">
+                    <b>Fact: Scavs can throw spears</b> 
+                        <ul>
+                            Scavs have evolved to the point of being able to <i>throw spears</i>, <i>point</i> with them and also use spears to <i>draw in the ground</i>.
+                        </ul>
+                        
+                    </li>
+                    <br>
+                    <li align="justify" style="font-family: 'Courier New', Courier, monospace; font-size: auto">
+                        <b>Fact: Scavs know the concept of trade</b>
+                        <ul>
+                            There are multiple sos called <i>"Scavenger Outposts"</i> where one way to pass is trade. Different items hold varying worth - <i>pearls</i> being the most sought after.
+                        </ul>
+                    </li>
+                    <br>
+                    <li align="justify" style="font-family: 'Courier New', Courier, monospace; font-size: auto">
+                        <b>Fact: Scavs have a class system</b>
+                        <ul>
+                            There are 3 main social classes in Scavenger Society: <i>Scouts, Elites and The Chieftain.</i> <i>Scouts</i> are the most common, othen seen in packs of 5 and stationed at Outposts or Merchant rooms. 
+                            <i>Elite Scavenger</i>s are specially trained military class, distinguished by thier colorful masks.<i>The Chieftain</i>  is a de facto leader of the settlement, with a biggest mask adorned with pearls.
+                        </ul>
+                        <!--<img title="picture of an Elite Scavenger" src="grafika/Elite_Scavenger_infobox_image.png" alt="picture of an Elite Scavenger" width="240" height="240">-->
+
+                    </li>
+                    </ol> 
+                </div>
+              <div class="box">
+                <picture>
+                    <img  loading="lazy" title="picture of a scavenger holding a spear" src="grafika/silly.png" alt="picture of a scavenger holding a spear" width="216" height="216">
+
+                </picture>
+              </div>

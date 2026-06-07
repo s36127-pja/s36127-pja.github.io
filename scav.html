@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Scavenger Notes
+        </title>
+        <link rel="icon" type="image/x-icon" href="grafika/Scavenger_icon.ico">
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+
+    <body class="fade-in">
+        <!--header-->
+        <header>
+            <nav>
+                <h1>
+                    <a href="index.html">
+                    LTTM_FP FACILITY GROUNDS
+                    </a>
+                </h1>
+                <ul>
+                    <li><a href="rot.html">ROT</a></li><li> · </li>
+                    <li><a href="scav.html">SCAVS</a></li><li> · </li>
+                    <li><a href="vulture.html">VULTURES</a></li><li> · </li>
+                    <li><a href="#">LIZARDS</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="base">
+
+            <!-- video bg   -->
+            <video autoplay muted loop plays-inline class="vid_bg">
+                <source src="grafika/deer.mp4" type="video/mp4">
+                Overseers couldn't find any footage <br>[Your browser does not support HTML5 video]
+            </video>
+
+            <!-- black backdrop -->
+            <div class="content_bg">
+                
+                <div class="headline">
+                    <div>
+                       <p>
+                        All current notes as of: 
+                       </p>
+                    </div>
+                    <div>
+                        <u>
+                            <p id="date"></p>
+                        </u>
+                    </div>
+                </div> <!-- div headline-->
+
+                <div class="headline">
+                    <div>
+                       <p>
+                        Subject:
+                       </p>
+                    </div>
+                    <div>
+                         <p> <u>Scavengers</u></p>
+                    </div>
+                </div> <!-- div headline-->
+            
+            
+
+            
+            <div class="box">
+                <div class="text">
+                    <ol>
+                       <li>
+                            <p><b>Fact: Scavs can throw spears</b></p>
+                            
+                                Scavs have evolved to the point of being able to <i>throw spears</i>, <i>point</i> with them and also use spears to <i>draw in the ground</i>.
+                            
+                       </li><br>
+                       <li>
+                           <p><b>Fact: Scavs know the concept of trade</b></p>
+                           
+                            There are multiple sos called <i>"Scavenger Outposts"</i> where one way to pass is trade. Different items hold varying worth - <i>pearls</i> being the most sought after.
+                            
+                       </li><br>
+                       <li>
+                            <p><b>Fact: Scavs have a class system</b></p>
+                            
+                                There are 3 main social classes in Scavenger Society: <i>Scouts, Elites and The Chieftain.</i> <i>Scouts</i> are the most common, othen seen in packs of 5 and stationed at Outposts or Merchant rooms. 
+                                <i>Elite Scavenger</i>s are specially trained military class, distinguished by thier colorful masks.<i>The Chieftain</i>  is a de facto leader of the settlement, with a biggest mask adorned with pearls.
+                            
+                       </li><br>
+                    </ol>
+                </div><!-- div of scav facts-->
+                
+                <div class="scrollcon">
+                        <img  loading="lazy" title="picture of a scavenger holding a spear" 
+                        src="grafika/silly.png" 
+                        alt="picture of a scavenger holding a spear" width="216" height="216">
+
+                        <img loading="lazy" title="scavs trading a pearl for a spear and passage" 
+                        src="https://static.wikitide.net/rainworldwiki/9/9f/Scavtollcommunication.gif" 
+                        alt="scavs trading a pearl for a spear and passage">
+
+                        <img loading="lazy" title="Chieftain Scavenger on a throne" 
+                        src="grafika/Chieftain_Scavenger_infobox_image.png" 
+                        alt="Chieftain Scavenger on a throne" width="240" height="240">
+
+                        <img loading="lazy" title="Elite Scav attacking a Spider" 
+                        src="grafika/Elite_scav_jump_spear.gif" 
+                        alt="Elite Scav attacking a Spider">
+                   
+                </div>
+
+
+
+            </div> <!-- div box-->
+           
+            </div> <!--div content bg-->
+
+                
+            </div>
+            
+        </div>
+        
+        <footer>
+            <p> · <b>s36127</b> · Julia Teslar · </p>
+        </footer>
+
+        <script>
+            n =  new Date();
+            y = n.getFullYear();
+            m = n.getMonth() + 1;
+            d = n.getDate();
+            document.getElementById("date").innerHTML = m + "/" + d + "/" + y;
+        </script>   
+    </body>
+
+</html>
+
+<!-- -->
