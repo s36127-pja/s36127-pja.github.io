@@ -72,11 +72,12 @@ header nav ul li a:hover{
     position: absolute;
     right: 0;
     bottom: 0;
+    left: 0;
     z-index: -1;
     display: flex;
     align-items: center;
     justify-content: center;
-    min-width: 100%; 
+    min-width: 100vw; 
     min-height: 100%;
 }
 body{
@@ -88,7 +89,7 @@ body{
 
 
 footer{
-    width:100%;
+    width:100vw;
     height:fit-content;
     background-color: black;
     display: flex;
@@ -96,6 +97,8 @@ footer{
     justify-content: center;
     position:fixed;
     bottom: 0;
+    right: 0;
+    left:0 ;
 }
 footer p{
     flex-wrap: nowrap;
@@ -110,32 +113,33 @@ footer p{
 .content_bg{
     width: 60%;
     height: 100vh;
-    background-color: rgba(0,0,0,98%);
+    background-color: rgba(0,0,0,94%);
     position: relative;
     top 0;
     display: flex;
     z-index: 0;
     flex-wrap: wrap;
     color: white;
-    padding-bottom: 9%;
+    justify-content:space-between;
+    
+    padding-top: 10%;
 }
-
-
-
 .content_bg h2{
     color: white;
     font-size: auto;
 }
+
+
 .headline{
     width: 100%;
     display: inline-flex;
     align-items:flex-start;
     justify-content: space-between;
-
-    padding-top: 10%;
     padding-left: 5%;
     padding-right: 5%;
     background-color: rgb(0,0,0);
+    margin-left: 2%;
+    margin-right: 2%;
 }
 .headline div p{
     font-size: 120%;
@@ -144,7 +148,7 @@ footer p{
 
 
 .box{
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     height:auto;
     width:auto;
     position: relative;
@@ -152,14 +156,14 @@ footer p{
     display: flex;
     overflow: auto;
     width: 100%;
-    align-items: center;
+    align-items: flex-start;
     justify-content:space-between;
-
+    gap: 2%;
 }
+
 .box ol li{
     list-style: none;
     cursor:default;
-    display:inline-block;
     font-size: auto;
     font-family: 'Courier New', Courier, monospace;
     color: rgb(255, 255, 255);
@@ -168,31 +172,88 @@ footer p{
     padding: 4%;
 }
 
-.box .text{
-    width: 50%;
-    float: left;
-}
-
 .box .stuff{
-    float: inline-start;
-    width: auto;
-    padding-right: 5%;
-
+    background-color: black;
+    width: 50%;
+    height: fit-content;
+    float: left;
+    justify-content: center;
 }
-.box .scrollcon{
+
+
+.box .stuff .scrollcon{
     background-color: black;
     border: 6px outset rgba(255, 255, 255,20%);
     overflow: auto;
     white-space: nowrap;
-    padding: 2%;
     align-items: baseline;
-    float: right;
-
+    padding-right: 10%;
 }
-.box .scrollcon img{
+.box .stuff .scrollcon img{
     padding: 2%;
-
 }
+
+.box .stuff .fun{
+    background-color: rgb(41, 37, 37);
+    justify-content: center;
+    padding-left:  5%;
+    padding-right:  5%;
+    padding-top:  0.5%;
+    padding-bottom:  0.5%;
+    text-align: justify;
+}
+.box .stuff .info{
+    justify-content: center;
+    padding-left:  5%;
+    padding-right:  5%;
+    padding-top:  0.5%;
+    padding-bottom:  0.5%;
+    text-align: justify;
+}
+
+.box .stuff h4{
+    text-justify: auto;
+    padding-left: 9%;
+    text-align: justify;
+}
+
+
+.item1{grid-area: item1;}
+.item2{grid-area: item2;}
+.item3{grid-area: item3;}
+.item4{grid-area: item4;}
+.item5{grid-area: item5;}
+.item6{grid-area: item6;}
+
+.box .stuff .fun .funny{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: auto;
+    column-gap:1vw;
+    row-gap: 1vh;
+    grid-template-areas:
+        "item1 item2 item3 item4 item5"
+        "item6 item7 item8 item9 item10"
+        "item11 item12 item13 item14 item15"
+        "item16 item17 item18 item19 item20"
+        "item21 item22 item23 item24 item25";
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: black;
+}
+.funny .item1 img:hover .overlay{
+    opacity: 1;
+}
+
 
 
 
