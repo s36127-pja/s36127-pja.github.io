@@ -11,8 +11,7 @@ header{
 nav{
     width: 100%;
     height: fit-content;
-    top 0;
-    left 0;
+    
     display: flex;
     align-items:center;
     justify-content:space-between;
@@ -107,6 +106,28 @@ footer p{
 
 
 
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
 
 
 
@@ -115,7 +136,7 @@ footer p{
     height: 100vh;
     background-color: rgba(0,0,0,94%);
     position: relative;
-    top 0;
+    
     display: flex;
     z-index: 0;
     flex-wrap: wrap;
@@ -193,6 +214,8 @@ footer p{
     padding: 2%;
 }
 
+
+
 .box .stuff .fun{
     background-color: rgb(41, 37, 37);
     justify-content: center;
@@ -218,26 +241,9 @@ footer p{
 }
 
 
-.item1{grid-area: item1;}
-.item2{grid-area: item2;}
-.item3{grid-area: item3;}
-.item4{grid-area: item4;}
-.item5{grid-area: item5;}
-.item6{grid-area: item6;}
 
-.box .stuff .fun .funny{
-    display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
-    grid-template-rows: auto;
-    column-gap:1vw;
-    row-gap: 1vh;
-    grid-template-areas:
-        "item1 item2 item3 item4 item5"
-        "item6 item7 item8 item9 item10"
-        "item11 item12 item13 item14 item15"
-        "item16 item17 item18 item19 item20"
-        "item21 item22 item23 item24 item25";
-}
+
+
 .overlay{
     position: absolute;
     top: 0;
@@ -250,11 +256,12 @@ footer p{
     transition: .5s ease;
     background-color: black;
 }
-.funny .item1 img:hover .overlay{
+.funny .item1:hover .overlay{
     opacity: 1;
 }
 
 
+    
 
 
 .box_cont{
