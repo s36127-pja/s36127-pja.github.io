@@ -2,40 +2,41 @@
 
 <html lang="en">
     <head>
-        <meta charset="UTF-8"/>
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>
-            Scavenger Notes
+            TESTING Facility
         </title>
         <link rel="icon" type="image/x-icon" href="grafika/Scavenger_icon.ico">
-        <link rel="stylesheet" href="style2.css"/>
+        <link rel="stylesheet" href="style2.css">
     </head>
 
-<body class="fade-in">
+    <body class="fade-in">
         
-    <header>
-        <nav>
-            <h1>
-                <a href="index.html">
-                    LTTM_FP FACILITY GROUNDS
-                </a>
-            </h1>
-            <ul>
-                <li><a href="rot.html">ROT</a></li><li> · </li>
-                <li><a href="scav.html">SCAVS</a></li><li> · </li>
-                <li><a href="vulture.html">VULTURES</a></li><li> · </li>
-              
-            </ul>
-        </nav>
-    </header> 
+        <header>
+                <nav>
+                    
+                    <h1>
+                    <a href="index.html">
+                        LTTM_FP FACILITY GROUNDS
+                    </a>
+                    </h1>
+                    <ul>
+                        <li><a href="rot.html">ROT</a></li><li> · </li>
+                        <li><a href="scav.html">SCAVS</a></li><li> · </li>
+                        <li><a href="vulture.html">VULTURES</a></li><li> · </li>
+                        <li><a href="#">LIZARDS</a></li>
+                    </ul>
+                </nav>
+        </header> 
       
                 <!-- video bg   -->
-    <video autoplay muted loop  id="vid_bg">
-        <source src="grafika/deer.mp4" type="video/mp4">
-            Overseers couldn't find any footage <br>[Your browser does not support HTML5 video]
-    </video>
+                <video autoplay muted loop  id="vid_bg">
+                    <source src="grafika/cloud.mp4" type="video/mp4">
+                    Overseers couldn't find any footage <br>[Your browser does not support HTML5 video]
+                </video>
                 
-   <div class="spot">
+                <div class="spot">
                     <div class="content">
 
                         <div class="item">
@@ -121,14 +122,15 @@
                     </div>
                 </div>
 
+                
 
-    <footer>
-        <p> · <b>s36127</b> · Julia Teslar · </p> 
-        <button id="bg_bttn" onclick="paused()">Pause Video Background</button>
-    </footer> 
+        <footer>
+            <p> · <b>s36127</b> · Julia Teslar · </p> 
+            <button id="bg_bttn" onclick="paused()">Pause Video Background</button>
+        </footer> 
 
-    <!--script for button to pause video bg just for you :) -->
-    <script>
+
+        <script>
             var video = document.getElementById("vid_bg");
             var bttn = document.getElementById("bg_bttn");
 
@@ -141,10 +143,8 @@
                     btn.innerHTML = "Play";
                 }
             }
-    </script>
-
+        </script>
     </body>
-
 
 </html>
 

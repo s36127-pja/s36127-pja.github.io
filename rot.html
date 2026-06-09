@@ -8,45 +8,141 @@
             Rot observations
         </title>
         <link rel="icon" type="image/x-icon" href="grafika/Scavenger_icon.ico">
-        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="style2.css"/>
     </head>
 
-    <body class="fade-in">
-        <!--header-->
-        <header>
-            <nav>
-                <h1>
-                    <a href="index.html">
-                    LTTM_FP FACILITY GROUNDS
-                    </a>
-                </h1>
-                <ul>
-                    <li><a href="rot.html">ROT</a></li><li> · </li>
-                    <li><a href="scav.html">SCAVS</a></li><li> · </li>
-                    <li><a href="vulture.html">VULTURES</a></li><li> · </li>
-                    <li><a href="#">LIZARDS</a></li>
-                </ul>
-            </nav>
-        </header>
-        <div class="base">
-
-            <!-- video bg   -->
-            <video autoplay muted loop plays-inline class="vid_bg">
-                <source src="grafika/rot.mp4" type="video/mp4">
-                Overseers couldn't find any footage <br>[Your browser does not support HTML5 video]
-            </video>
-
-            <!-- black backdrop -->
-            <div class="content_bg">
-                
-            </div>
-        </div>
+  <body class="fade-in">
         
-        <footer>
-            <p> · <b>s36127</b> · Julia Teslar · </p>
-        </footer>  
+    <header>
+        <nav>
+            <h1>
+                <a href="index.html">
+                    LTTM_FP FACILITY GROUNDS
+                </a>
+            </h1>
+            <ul>
+                <li><a href="rot.html">ROT</a></li><li> · </li>
+                <li><a href="scav.html">SCAVS</a></li><li> · </li>
+                <li><a href="vulture.html">VULTURES</a></li><li> · </li>
+                
+            </ul>
+        </nav>
+    </header> 
+      
+                <!-- video bg   -->
+    <video autoplay muted loop  id="vid_bg">
+        <source src="grafika/rot.mp4" type="video/mp4">
+            Overseers couldn't find any footage <br>[Your browser does not support HTML5 video]
+    </video>
+                
+   <div class="spot">
+                    <div class="content">
 
-    </body>
+                        <div class="item">
+                            <div class="headline"> 
+
+                                <div>
+                                    <p>
+                                        All current notes as of: 
+                                    </p>
+                                </div>
+
+                                <div>
+                                    <u>
+                                        <p id="date"></p>
+                                    </u> 
+                                    <script>
+                                        n =  new Date();
+                                        y = n.getFullYear();
+                                        m = n.getMonth() + 1;
+                                        d = n.getDate();
+                                        document.getElementById("date").innerHTML = m + "/" + d + "/" + y;
+                                    </script>   
+                                </div>
+
+                            </div> <!-- div headline-->
+                            <div class="headline">
+                                <div>
+                                    <p>
+                                        Subject:
+                                    </p>
+                                </div>
+                                <div>
+                                    <p> <u>
+                                        
+                                            Rot
+                                        
+                                    </u></p>
+                                </div>
+                            </div> <!-- div headline-->
+                        
+                        </div><!-- headline items-->
+
+                        <div class="item">
+                            <div class="box">
+                                    <h3>Observation 1: Differences [ongiong] </h3>
+                                    <p>
+                                        There are so many documented cases of <i>Rot</i> but as of now LG_FP joins the selected few to have ever <del>get sick</del>
+                                        <del>bring on the plauge</del> <del>get cancer</del> come up with <i>The Rot</i>. In wake of the destruction of his labs
+                                        the Local Group observed that the rot inside of his can <i>cannot survive</i> outside. <del>good news for everyone</del>. The 
+                                        few cysts of rot that got out into the Wastes slowly began to lose colour and senses. 
+                                    </p>
+                            <br>
+                            <h3>Observation 2: Stages [ongoing] </h3>
+                                    <p>
+                                        Discalmer: all naming conventions were created by LG_NSH<br>
+                                        ProtoRot - the first stage, the organism lacks any complex senses and relies mainly on short appendages to eat<br>
+                                        Daddy Long Legs - named after its similarity with spiders, they are a mobile cluster of cysts with long appendages that they use for movement and apphending prey.
+                                         They posses a keen sence of hearing and touch.<br>
+                                        Mother Long Legs
+                                    </p>
+                            <br>
+                            <h3>Observation 3: How to get the rot [on hold] </h3>
+                                    
+                            <div class="blurred">
+                                    <p>
+                                       <i> "The following information is classified. It should NOT be distributed through the broadcasts under the threat of possible detection and isolation of iterator.
+                                        The following message is to be delivered through pearls. The analisys was done by node_SRS. First step is to-"</i> <br>message cuts off here - LG_SNIR_LTTM
+                                    </p></div>
+                            <br>
+                            </div>
+                        </div><!--text -->
+
+                        <div class="item" >
+                            <h3>vulture mask in all angles - scan by LG_NSH</h3>
+                            <div class="pics" >
+                                   <img src="https://static.wikitide.net/rainworldwiki/5/53/VultureMask.gif" >
+ 
+                            </div>
+                            
+                        </div>
+
+                    </div>
+                </div>
+
+
+    <footer>
+        <p> · <b>s36127</b> · Julia Teslar · </p> 
+        <button id="bg_bttn" onclick="paused()">Pause Video Background</button>
+    </footer> 
+
+    <!--script for button to pause video bg just for you :) -->
+    <script>
+            var video = document.getElementById("vid_bg");
+            var bttn = document.getElementById("bg_bttn");
+
+            function paused() {
+                if (video.paused) {
+                    video.play();
+                    btn.innerHTML = "Pause";
+                } else {
+                    video.pause();
+                    btn.innerHTML = "Play";
+                }
+            }
+    </script>
+
+</body>
 
 </html>
 
