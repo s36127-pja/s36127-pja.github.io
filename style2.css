@@ -1,3 +1,31 @@
+.lScreen {
+  position: absolute;
+  z-index: 5;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lHidden{
+  opacity: 0;
+  visibility: hidden;
+}
+
+.lScreen::after{
+  <svg viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+                                <circle r="345" cx="400" cy="400" stroke="#ffffff" stroke-width="25"/>
+                                <rect width="700" height="25" x="210" y="0" fill="#ffffff" transform="rotate(45)" />
+                                <rect width="700" height="25" x="-345" y="555" fill="#ffffff" transform="rotate(-45)" />
+                                <circle r="245" cx="400" cy="400" stroke="#ffffff" stroke-width="25"/>
+                                <rect width="500" height="25" x="310" y="0" fill="#ffffff" transform="rotate(45)" />
+                                <rect width="500" height="25" x="-245" y="555" fill="#ffffff" transform="rotate(-45)" />
+                            </svg>
+}
+
+
 header{
     width: 100%;
     background-color: black;
@@ -117,14 +145,14 @@ button:active{
 /*.contnet is the halp transparent background fo content, also aligns items*/
 .content{
     width: 70%;
-    height:100dvh;
+    height:fit-content;
     background-color: rgba(0,0,0,92%);
     display: flex;
     flex-wrap: wrap;
     color: rgb(158, 156, 156);
     align-content: flex-start;
     justify-content: center;
-    overflow: auto;
+    
 } 
 .content::-webkit-scrollbar{
     display: none;
@@ -138,7 +166,7 @@ button:active{
     margin: 3%;
     width: 100%;
     height: fit-content;
-    background-color: inherit;
+    
     display: flex;
     flex-wrap: nowrap;
     
