@@ -8,16 +8,14 @@
             LTTM_FP Facility
         </title>
         <link rel="icon" type="image/x-icon" href="grafika/Scavenger_icon.ico">
-        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="style2.css"/>
     </head>
 
-    <body class="fade-in" style="background: url(grafika/cloud.mp4);">
+   <body class="fade-in">
         
-        
-        
-        <flexbox>
-            <header id="navbar">
+        <header>
                 <nav>
+                    
                     <h1>
                     <a href="index.html">
                         LTTM_FP FACILITY GROUNDS
@@ -27,55 +25,89 @@
                         <li><a href="rot.html">ROT</a></li><li> · </li>
                         <li><a href="scav.html">SCAVS</a></li><li> · </li>
                         <li><a href="vulture.html">VULTURES</a></li><li> · </li>
-                        <li><a href="#">LIZARDS</a></li>
+                       
                     </ul>
                 </nav>
-            </header> 
-            <script>
-                var prevScrollpos = window.pageYOffset;
-                window.onscroll = function() {
-                var currentScrollPos = window.pageYOffset;
-                    if (prevScrollpos > currentScrollPos) {
-                        document.getElementById("navbar").style.top = "0";
-                    } else {
-                        document.getElementById("navbar").style.top = "-50px";
-                    }
-                    prevScrollpos = currentScrollPos;
-}
-</script>
-          <div class="base">
-            
-            <!-- video bg   -->
-            <video autoplay muted loop plays-inline class="vid_bg">
-                <source src="grafika/cloud.mp4" type="video/mp4">
-                Overseers couldn't find any footage <br>[Your browser does not support HTML5 video]
-            </video>
-            
-              
-            <!-- black backdrop -->
-                <div class="content_bg">
-                <div class="vectorek">
-                    <svg viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
-                        <circle r="345" cx="400" cy="400" stroke="#ffffff" stroke-width="25"/>
-                        <rect width="700" height="45" x="2195" y="0" fill="#ffffff" transform="rotate(45)" />
-                        <rect width="800" height="25" x="-245" y="555" fill="#ffffff" transform="rotate(-45)" />
-                        <circle r="245" cx="400" cy="400" stroke="#ffffff" stroke-width="25"/>
-                        <rect width="500" height="25" x="310" y="0" fill="#ffffff" transform="rotate(45)" />
-                        <rect width="500" height="25" x="-245" y="555" fill="#ffffff" transform="rotate(-45)" />
+        </header> 
+      
+                <!-- video bg   -->
+                <video autoplay muted loop  id="vid_bg">
+                    <source src="grafika/cloud.mp4" type="video/mp4">
+                    Overseers couldn't find any footage <br>[Your browser does not support HTML5 video]
+                </video>
+                
+                <div class="spot">
+                    <div class="content">
+
+                        <div class="item">
+                            <div class="headline"> 
+
+                                <div>
+                                    <p>
+                                        All current notes as of: 
+                                    </p>
+                                </div>
+
+                                <div>
+                                    <u>
+                                        <p id="date"></p>
+                                    </u> 
+                                    <script>
+                                        n =  new Date();
+                                        y = n.getFullYear();
+                                        m = n.getMonth() + 1;
+                                        d = n.getDate();
+                                        document.getElementById("date").innerHTML = m + "/" + d + "/" + y;
+                                    </script>   
+                                </div>
+
+                            </div> <!-- div headline-->
+                            <div class="headline">
+                                <div>
+                                    <p>
+                                        Subject:
+                                    </p>
+                                </div>
+                                <div>
+                                    <p> <u>Scavangers</u></p>
+                                </div>
+                            </div> <!-- div headline-->
                         
-                    </svg>
-                    
-                </div>
+                        </div><!-- headline items-->
+
+                        
+
+                        <div class="item" >
+                            <h3>rot map <del>apologies FP</del></h3>
+                                <iframe src="https://rain-world-map.github.io/map.html?slugcat=artificer&region=SS" style="border:none;" height="800dvh" width="800dvw" ></iframe>
+ 
+                        </div> <!--map-->
+
+                    </div>
                 </div>
 
+                
 
-                <footer>
-                    <p> · <b>s36127</b> · Julia Teslar · </p>
-                </footer>  
-            </flexbox>
-            
-        </div>
-    
+        <footer>
+            <p> · <b>s36127</b> · Julia Teslar · </p> 
+            <button id="bg_bttn" onclick="paused()">Pause Video Background</button>
+        </footer> 
+
+
+        <script>
+            var video = document.getElementById("vid_bg");
+            var bttn = document.getElementById("bg_bttn");
+
+            function paused() {
+                if (video.paused) {
+                    video.play();
+                    btn.innerHTML = "Pause";
+                } else {
+                    video.pause();
+                    btn.innerHTML = "Play";
+                }
+            }
+        </script>
     </body>
 
 </html>
