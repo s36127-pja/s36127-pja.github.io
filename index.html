@@ -2,13 +2,13 @@
 
 <html lang="en">
     <head>
-        <meta charset="UTF-8"/>
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>
             LTTM_FP Facility
         </title>
-        <link rel="icon" type="image/x-icon" href="grafika/Scavenger_icon.ico">
-        <link rel="stylesheet" href="style2.css"/>
+        <link rel="icon" type="image/x-icon" href="grafika/White_Overseer_icon.ico">
+        <link rel="stylesheet" href="style2.css">
     </head>
 
    <body class="fade-in">
@@ -38,50 +38,45 @@
                 
                 <div class="spot">
                     <div class="content">
-
+                        <div class="vectorek">
+                            <!-- the svg image is in the background fyi -->
+                            <svg viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+                                <circle r="345" cx="400" cy="400" stroke="#ffffff" stroke-width="25"/>
+                                <rect width="700" height="25" x="210" y="0" fill="#ffffff" transform="rotate(45)" />
+                                <rect width="700" height="25" x="-345" y="555" fill="#ffffff" transform="rotate(-45)" />
+                                <circle r="245" cx="400" cy="400" stroke="#ffffff" stroke-width="25"/>
+                                <rect width="500" height="25" x="310" y="0" fill="#ffffff" transform="rotate(45)" />
+                                <rect width="500" height="25" x="-245" y="555" fill="#ffffff" transform="rotate(-45)" />
+                            </svg>
+                        </div>
                         <div class="item">
-                            <div class="headline"> 
-
-                                <div>
-                                    <p>
-                                        All current notes as of: 
-                                    </p>
-                                </div>
-
-                                <div>
-                                    <u>
-                                        <p id="date"></p>
-                                    </u> 
-                                    <script>
-                                        n =  new Date();
-                                        y = n.getFullYear();
-                                        m = n.getMonth() + 1;
-                                        d = n.getDate();
-                                        document.getElementById("date").innerHTML = m + "/" + d + "/" + y;
-                                    </script>   
-                                </div>
-
-                            </div> <!-- div headline-->
                             <div class="headline">
                                 <div>
-                                    <p>
-                                        Subject:
-                                    </p>
+                                     <h2>NOTES COMPILED FROM PAST BROADCASTS, PEARLS AND INDIVIDUAL RESEARCH</h2>
                                 </div>
                                 <div>
-                                    <p> <u>Scavangers</u></p>
+
                                 </div>
-                            </div> <!-- div headline-->
-                        
+                            </div>
                         </div><!-- headline items-->
-
+                        <div class="item">
+                            <div class="box">
+                                
+                            </div>
+                        </div>
                         
-
+                        <div class="item">
+                            <h3>Map of facility <del>apologies FP</del></h3>
+                        </div>
                         <div class="item" >
-                            <h3>rot map <del>apologies FP</del></h3>
-                                <iframe src="https://rain-world-map.github.io/map.html?slugcat=artificer&region=SS" style="border:none;" height="800dvh" width="800dvw" ></iframe>
+                            
+                                <iframe src="https://rain-world-map.github.io/map.html?slugcat=rivulet&region=RM" style="border:none;" height="800" width="100%" ></iframe>
  
                         </div> <!--map-->
+
+                        <div class="item">
+                            
+                        </div>
 
                     </div>
                 </div>
